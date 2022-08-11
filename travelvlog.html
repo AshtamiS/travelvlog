@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel vlog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="travelvlog.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand " href="#">
+            <img src="https://www.svgrepo.com/show/32981/earth-paradise.svg" alt="" width="100" height="100" class="d-inline-block align-text-top">
+           <strong>POE</strong> 
+          </a>
+          <h1 class="display-3" style="font-size: xlarge; font-family: fantasy;"><strong>Paradises on earth.</strong></h1>
+        </div>
+      </nav>
+
+
+
+      <nav class="navbar navbar-expand-lg sticky-top  navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Where do you want to go?</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  blog
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#">places</a></li>
+                  <li><a class="dropdown-item" href="#">videos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">images</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active disabled" href="#" tabindex="-1" aria-disabled="true">planning</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search the place" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+   <!-- next part -->
+ 
+    <div class="bg-image" style="
+    background-image: url('https://vidalingua.com/blog/venice-dusk');
+    width: 100%; height: 1000px; background-repeat: no-repeat; background-size: cover ; "> <h1 class="display-1 p-5" style="font-family: 'Times New Roman', Times, serif;color: black;"> Travel adventurously!! <br> lets start the journey today</h1></div>
+<div class="2nd" style="background-color: black;"><center><h1 class="p-5" style="color: white;">Top destinations</h1></center><br><br><br><br>
+<!-- destinations -->
+<div class="destinations p-5">
+
+  <div class="card" style="width: 15rem;">
+    <img src="https://images.all-free-download.com/images/graphiclarge/us_map_silhouette_vector_144872.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h1 class="card-text">America</h1>
+    </div>
+  </div>
+
+  <div class="card" style="width: 15rem;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrzyXWpvk3hKAZh3OzLSSLx8Dile4inGI1Jw&usqp=CAU" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h1 class="card-text">Albania</h1>
+    </div>
+  </div>
+
+  <div class="card" style="width: 15rem;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFFQD3wDsqk5f5wbz2JguVhxneXlY9IQ13UA&usqp=CAU" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h1 class="card-text">Egypt</h1>
+    </div>
+  </div>
+
+  <div class="card" style="width: 15rem;">
+    <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h1 class="card-text">Turkey</h1>
+    </div>
+  </div>
+
+  <div class="card" style="width: 15rem;">
+    <img src="https://render.fineartamerica.com/images/rendered/square-dynamic/small/images/artworkimages/mediumlarge/2/thailand-silhouette-map-bigalbaloo-stock.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h1 class="card-text">Thailand</h1>
+    </div>
+  </div>
+
+  <div class="card" style="width: 15rem;">
+    <img src="data:image/png;base64,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" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h1 class="card-text">Europe</h1>
+    </div>
+  </div>
+
+  <div class="card" style="width: 15rem;">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOcAAADbCAMAAAChknbEAAAAkFBMVEX39/cAAAD////6+vr19fXv7+/z8/Ps7OzIyMjS0tLp6enZ2dnBwcHh4eHm5ubLy8ucnJx9fX2np6e6uro9PT2xsbGSkpJCQkKfn5/Q0NBubm40NDS+vr5TU1Ozs7NpaWlbW1uUlJSLi4uDg4MpKSkMDAwdHR1ra2tJSUk3Nzd2dnYtLS0WFhZZWVkiIiJNTU0EPOawAAAPkUlEQVR4nO1diXaiShC1q2QTUAH3FXBJok7y/3/3egFFaBSTqE2e95w3My/JZPqmurv26kbjhRdeeOGFF1544YX7A4EB8dnruDPQ8t7JeuC04NkruS/gkwis/rhIcZQQ/Wj+aaLgkxTtv0wU4iNPYv/hQwrdE09i/lWi7QaMMjyJRVXMs9dUHahXXCz2SY+c4SPs63URKqzIrNpa0SFFbGL2U0LlBQvxlqrDRpV1SnkSEgJCe2UqTRQRPL7Yab+CTI2h9+GvCkR3fXYLuwoTxYVr2Mlq/etEhXVrLKVibSnME4aZhfarLBSbfW+0l/FUeePCe2ahXxV2LhpSWTJ4p7+ODaU4U+0XZhb6wV2uC1+OjaY7qsATbaOjkLbBAfWxsitd7+KRW8oUvVnGus1jNYhO1PQuZa2MSHEhW/DSLXG5kOrKUppUBWclCGMyHAM0H0PkGmAuXfKnJiUq/7EcYWD+W38MpmoIFXW5gPaIEpmitb3EcwlnXzvgH5x0VCCKrZI1752ZpTU1PbXmuN7UL4pzT7LfGQTNZdx6CrEcsHlx6YRsJy67gsGOdmF4+UtNOys56O29xZQoEUaiy7+ydg7Pc+T2zwmf5DA+P4lohGsD7PazuJ0Wgk1DbpV/A57d1/Lfv91XwQ2nP+pyVVgZh4Bf2NO25NaiDvlefm8/EJp3SRVWhg8z+uteqjyQuQdPdmHQ/AWS3DRYk7lZ4qdw2+mJO5fuMXR/gaXXbTWwvy7NQWCbPNNXQ2sGDegOfsxzwmz+CxdqiynnJ2xc5OkfhB6xkP5Z6kLehk8bbKPEw0FY0rPbe/y+xfbbKHDRoQ5KF6ydX0V1XkNM9/9yIpMZugPY0a/wHy9PvjIuxX+/oFJOeC+YsOz/W/+4cbF8tEDhN64eGazCvsUFHv+58KE8NYBrptt3EUv8Gh0000o+/8iNC2RZHu34GfY5eSGjyWwQYYasyeyBPK95JT9Ar31GFKnTAv/ox4fMuCeTZfTAiMJZiuvXcXbTwA6o3iJhGM6ZVUj918fRzKW4fh2jsziC2SeDLtNd8+Gjr1pugN0R2RAmsqTEcjg0XRSeWuuBLij+hm9SjswZRTPwqLvmBk+Jf0Ex8/O7OFkK1KIMyfBJUb4rAclfQGbnavQfewpLRhR/w5q9gHFGgLiQ2A4P4qndl2Z8FovHL/1ZPIfX1/oDbEhvkiX6tGhJSb79F9E9E+iTaNIb17szz6xv9sxo5p1toixP9J4ZnYbgnjRHGXHqFeoc7ge0r6/2+8jePCXxogfxhPYdjaJ5RoLNnUycaOUTE/cB3nXbBpnTacmrVh4kT3i7J09PDa3SYMVtyzhaDAL3Hrt3byXZYHyWIXQCL5kBROP3Ld1D4oCiNR4bT6Z5xB3u3TTNiWUZpacAW5NfZbk9qUuFWDbYKZqcV0f9DFXKPJ8DdCN53VAW+8N1ipu46z40oncjNN5sc+lCGr5Zs+s8TcWr47HJ0klxyeq77symN3NZaREhvZm/I72RnitVVJAyal/0XPXkNGxRCwZRCc2DA2ATO5/HRhXLb1nOF0qCDKlyKEs9sX4rCLv5c4nq6M5zgPSmeT+GtFCT2oqsNQKW62LxtaoXEsj0aDdzsyDIeFLTDlme2MjxNPwHr78qsF8kcZ4TwViiZ23g8eB5PiHodMxHrr46JMU161wLIMgC3HRj4yLOW+xM9oo2dhRLTgp1arLMKZN50TpQmWdOg86LnavIPp7PQoUy64Dd3h9qXkX5GENUWCbf2vtCkdxc1nc3LJ5ZZZBd/FRSXMkypzvgifgzHApEWZPaRokacQmyCf2F1HfElt1sYNHULUiOubUPrxWqjMw1Y8tlwYw7WdVjUBDogeyLG18RwElSl+p8JBZiUaDukPhOExSlerxLY2nUVfwmS1oU6sStFXmn30bNzctrDcU1JFvfKglwMR/NPxdqYZ8339+j+Wqr5l10Ui3vRZ7YToWDc2rPnvvlBfmDSxzD+Zjcf9HfAV7at3qSvUVnyAR4Vs6RTxZhYHuLiUUiMlROopiplJfct2gntw2O16zUAvWMR5qv24ORBfrStPw5eX6w+hzIwuipNy09Vyl58AkTLZ4Mi3/5L2/Rs0zv5U73KbXFl8HnATilegX7ST6h0dwJtxr8pJOuoCnRHLaoY7AhYeypOclGhBV27iV9QOUpfBEI/Ck15IttY7jusF9jMo82KyX9FqFaDK8Q8MkAO8TuisWzvk6rwAOWPPmAGxLHsHVU5Mk3btTfSU4odjKGQlKWCcOeW6iphZ1I7qIxGevRWjlbgRdMQEi+WF35tvh5TCoqWIwzURfYbUNenjhOy4fA93xCPlWTZ0IjaiNsJbY5lZPQEbjoHW9kLM4MwG6iSpphqZJSAYBMqORTYhIl5HT6c4jKG/Fd0bWL469e0JNdx8qA2zrF1cG/1PIDQgZl86NwKm5Y9B0AVhs/VlOeFMyXll0fzdRpwT0hGzlR6q4nrZHBDOGDbH1FxgnIgN2S7tv2WGTFeDpG2mLFikHnLiBOWCBNiws+m1IoOX1ok5XPjCHkMWsJ0SR/ETmJtCEfqa8HeDDBgyR8nxZBHanoDXHHjrTMj0BXeOOWATUWzrZBFHAkZ5i1kHFAX9CcZkulMCiqKPWBxhclEgAvVn4DoUHDTKSBYZyZyWO5VtEyVB9N5FeQB6wNhvJD22H9gA2WCRyn44uyiZkma79X02m5hPbQ4OX1AS9W9push0w0kmXCvxnLAB3+eUVtonKgbvTZHbQZRgseRxIemqllE6iZUVQsx4TWtIZbF30QVWQr6yvdoTr59LLZUYfFVVgHOFj0cob3SMVyhSuAeAkikDAceCIAWqxzdcAkU6+/cAjbt1uJV6A+qEDTRgJXpJDyLU4OPbZk+DUNReQQh5sFVBp9qBZgkZgDxEna63OdP/RUxg4fUsTHbTb3tt01PF/MVavP3YsjSObZtXaCZy7TrVFf1QTTmvG4LrWddvSohjOf/KP3Vb82E4FxFidaZN9JzHovm+YeIbMY3A3ZzNldhI2OqzVQJDVGC3fakFXIqVhvZGxSgcYuq6TC4JSa4TWb2GF/2C22rdWIWvQHahj67uwfV61BPBv1+mcFZNSzQef5U5iKAC9Na+/2C16bnZmQwgykiIhklBXY9AgzqY7a4A57HzsAm2na6ew4GhCd9z4LQ8imrT0Z6EZpJfaWOEt6/DKaxUaW4V+HZEAFi6gBNJyg3wY0V58b0jkm/vd+MliN/4aRF6inZWF1rGy03RH1SDXLHm487nw2ed5+EJMDv4VMsuSHeQUNJvRlJv+06XZOJxVh1lNPzWLajfcPxH5DtKkeschyq/NQ9m5ENjaLJei7VXvVatghc+YiksMk49uA/qZAj0QRvJT1FEdim08zRQABqEczTUKavLVCFFPNLHzPM02HpiF25mGkYJYCkGXXcrNZkjgZlRx4k/zwfNZKAjDLUY3ZjkBw6UnwbXQftv6KwIh109NjJ4mYoU9G4ITMns/C6EPA2FpnRWVd3R8HQTBZkQllHCnnwtH1NLvWqj9oMjZ0idnr0u1SGbXgLAEMu7bBw3/5Uo6oz2cgsWJeem2pxpNB6JMeVaErWzzFcgwVCZWRfBn/BVnpDtvKhXL7CCBYiL8KoYqFgdjnotmsqVJcLw+haybRdzzW37LDN2a/d6glYIksIXyc0ZxpJ/Me2wslBQr+sdt7O3MMPl3tuGaGWd8BraGjy4uvxWfC86rPsyZR9awiAQTdRTshu4wMC/ygo+t0G2sLM/BbgzFQw74Ly2PshBmJ0+TrkY+45q2UivLLgGlHaFsda/mWNPxQe+BzOp/EvpnadsapNBLHHRdEaQu1EfmkRroPIFLQwJWAK8GG1jZXC1dz7bbZphQD6cw+Rgi6+w8xaAGpvdELbFvDTrcORAUoWWR6w2Z51L28UpCD3s6i+0PUL4/YnNX60BQAnHehDQG5WM+RNr1AZxVu1vGobiwZ2Hk1dydbic20FjXamCYKwUtNH/bJkQ+NRv0kSoGZTgI0PS/et9hebqWHEJiDevoKZj/0TQXt+FsAq+EIVofYwlk6j4haeJPcrsZxzWkyotPETTkkdbwsH1WoVak9zUz2JeWyVbbk5jtA4JmkI8vjeAWT/CGe1NqZrwD1U5LpKyHHI4TKOdXfBJos7e1nJn0fjI4IAfHw0r73JwSKWpKHOblh7820+E+UNJfbS/UBypqE94kTZqQe9pMX+XOAOy7S5NRYhXrSVzuoPU8MyybQDjpL7qT8iX2LU1I+ZyM4VW0oXRZXBaUkCXvJ5fhHFfOBN0DazC1DveUJld/GqM1DmkUgQqvCgBuBnlO/Ag0Gas+ai5sGWy5qU7BwhA4trXvzOFblOj+uQXO+NTCvZrYCgHPx6bZy1Ion7L47/XA7UzGLXYKMK307HvuQx4/wo9ekamTlwk9GO25qo1l+tG2ZaqkJU5T7mpVhq1cjJQXidS6XEEoHAisHjOIfvkVUj2YenJGP61wuQNlpRTnAN02hFHXRLKUDGyuiLrb8T191Ua9SU46fvupSl0zLDx/XrE/+4fI709eg0izri/jZYyermtxCDTFN9LtQbpREOUQnxzfx1Dc9bkPJ829hHHevvpf2VR+aEjd7vV32m6wm151dNn3Xz177LciPo4xbkHZXYelQaI5encK3zfMK6QjP/GYxi3UnpTmoi4fNgMeC9/Vwuy0Y5axOfD2STjT3rp1NpX4KaTrT460bhSHcaFE7fS5LuSyv0lDL8OVp+Ljs2QM0P2C1lIzi31y9aeFdrXE3ePG5VoSOX5gn+0EO14eftGoVradW4Ven+NZLBasWDmHrAQv8LfAq6zzNRQVJwaf/tAcnv4eCh1ophADrcJV/PEJtFB56ruRaN9mLv2MlW3dKgG0xoZ53rnQdszi3XQJeBbgkdeJJz6hDzQmHmkVverWtiMkeuNRNoCIQNPpfv1Nx2eh8cf3j1Iwmm6+GXJlW24aiid+qkwGcQF80WddSlSeYgbVihWRTP2E2mOOyQ8P0rt+0qH9FXWtFQtmjCupDBAWvZ+lBp87N175OAZUskhetr8qIX7NbQ1f29aErEEmYa7cQ8BxGrJbneRN4F8vsopCo0+Mf+CCc7AdrRhn94eCimBBa3DKYn+kSdNV8V6AcePFlCwSH9WZ9Djrn4+Hgqy5ZpkoAay5kWTAKa5N9qYB0hNGwbofxNmBLhAPfaqpKqgIDtmmHNZzbeCNw1fFrWkJ+C9Cf1Ss88l38L0i+8ELN8D85l2jVctzH7ah3H90t+H/Ikw8r/1/grwxReOGFF1544YUXXngK/gPRjcH1KxHhEAAAAABJRU5ErkJggg==" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h1 class="card-text">South East Asia</h1>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- next -->
+<div class="bg-image" style="
+    background-image: url('https://st2.depositphotos.com/1482677/10746/v/950/depositphotos_107469652-stock-illustration-black-world-map-on-yellow.jpg');
+    width: 100%; height: 1500px; background-repeat: no-repeat; background-size: cover ; "> <h1 class="display-1 p-5" style="font-family: 'Times New Roman', Times, serif;color: rgb(4, 3, 3);"> DISCOVER THE WORLD</h1></div>
+<br><br><br>
+<br>
+<!-- next -->
+<center>
+  <div class="ff">
+  <h2>MY TRAVEL ADVICE HAS BEEN FEATURED IN</h2><hr>
+  <br><br><br><br><br><br>
+<div class="feature">
+  
+<img  src="https://1000logos.net/wp-content/uploads/2021/05/Lonely-Planet-logo-768x432.png" alt="" width="100" height="100">
+<img  src="https://cdn.iconscout.com/icon/free/png-64/bbc-2-461774.png" alt="" width="100" height="100">
+<img  src="https://vimeopr.gcs-web.com/system/files-encrypted/styles/nir_asset_small/encrypt/nasdaq_kms/assets/2021/07/01/12-22-56/vimeo_logo_dark_thumb.jpg?itok=I3NNhQK8" alt="" width="100" height="100">
+<img  src="https://1000logos.net/wp-content/uploads/2018/11/BuzzFeed-logo.jpg" alt="" width="100" height="100">
+<img  src="https://1000logos.net/wp-content/uploads/2019/12/Time-Out-Logo.jpg" alt="" width="100" height="100">
+<img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs6tvgNpc-4cI37AmU66gk6J9y3iCbyejLoNG460T2u-OD5K9CJZB9k9aOKNCV9xHG-XA&usqp=CAU" alt="" width="100" height="100">
+<img src="https://www.travelandleisure.com/thmb/bdum3iEVKHGPk2eJOzG86Uehnv0=/1600x1200/smart/filters:no_upscale()/about-us-tl-logo-lead-964035a4808042b3a88559628ccfa737.jpg" alt=""width="100" height="100">
+</div>
+</center><br><br><br><br><br>
+</div>
+<!-- next -->
+<div class="popular">
+<div class="bg-image" style="
+    background-image: url('https://images.unsplash.com/photo-1564566800380-aa5a49acb065?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbCUyMGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8&w=1000&q=80');
+    width: 100%; height: 2000px; background-repeat: no-repeat; background-size: cover ; "> <center><h1 class="display-1 p-5" style="font-family: 'Times New Roman', Times, serif;color: rgb(5, 5, 5);"> MOST POPULAR</h1></center>
+   
+   <div class="mpcard p-5">
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/originals/0f/20/ac/0f20acc58e176b471d1f867e6261e026.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Photography</h5>
+        <h6 class="card-text">10 Best Camera Bags for Hiking, Backpacking, and Travel</h6>
+        <p class="card-text">The Ultimate Guide to Finding the Best Travel Camera Backpack</p>
+        <a href="#" class="btn btn-dark">Book now</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://preview.redd.it/di1u8xbmpfo81.jpg?auto=webp&s=80e6c8c9f9c3950de30dabbd370ab5fe10456b0d" class="card-img-top" alt="..." style="height: 500px;">
+      <div class="card-body">
+        <h5 class="card-title">Northern Thailand</h5>
+        <h6 class="card-text">10 Best Places to Visit in Northern Thailand in 2022</h6>
+        <p class="card-text">What to See and Where to Go for First-Timers</p>
+        <a href="#" class="btn btn-dark">Book now</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://wallpaperaccess.com/full/1881691.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">INSPIRATION</h5>
+        <h6 class="card-title">20 Most Beautiful Travel Blogs in 2022</h6>
+        <p class="card-text"> That Takes Storytelling to the Next Level</p>
+        <a href="#" class="btn btn-dark">Book now</a>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://images.unsplash.com/photo-1493707553966-283afac8c358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGV1cm9wZXxlbnwwfHwwfHw%3D&w=1000&q=80" class="card-img-top" alt="..." style="height: 500px;">
+      <div class="card-body">
+        <h5 class="card-title">Europe</h5>
+        <h6 class="card-title">3 Months Europe iternity</h6>
+        <p class="card-text">A Complete Guide to Backpacking Europe</p>
+        <a href="#" class="btn btn-dark">Book now</a>
+      </div>
+    </div>
+
+    </div>
+    <!-- 2nd set card -->
+   <center> <h1 style=" font-family: 'Times New Roman', Times, serif; color: black; " class="display-1"><strong>RESCENT POSTS</strong></h1></center><br><br><br>
+
+<div class="mpcard">
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://c4.wallpaperflare.com/wallpaper/203/302/519/morning-africa-national-park-arusha-national-park-wallpaper-preview.jpg" class="card-img-top" alt="..." style="height: 400px;">
+    <div class="card-body">
+      <h5 class="card-title">Tansania</h5>
+      <h6 class="card-title">10 Best Things to do in Tanzania in 2022</h6>
+      <p class="card-text">A travel guide for first timers</p>
+      <a href="#" class="btn btn-dark">Know more</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://realmafricasafaris.com/wp-content/uploads/2019/07/3-Days-Uganda-gorilla-Safari-through-Kigali.jpg" class="card-img-top" alt="..." style="height: 400px;">
+    <div class="card-body">
+      <h5 class="card-title">Uganda</h5>
+      <h6 class="card-title">A Complete Guide to Gorilla Trekking in Uganda</h6>
+      <p class="card-text">Things To Know Before, What To Wear, And More</p>
+      <a href="#" class="btn btn-dark">Know more</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://wallup.net/wp-content/uploads/2018/10/09/62813-animals-pride-national-mara-lions-kenya.jpg" class="card-img-top" alt="..." style="height: 400px;">
+    <div class="card-body">
+      <h5 class="card-title">Kenya</h5>
+      <h6 class="card-title">How to Get To Diani Beach, Kenya</h6>
+      <p class="card-text">A Step-By-Step Travel Guide</p>
+      <a href="#" class="btn btn-dark">Know more</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://cdn.wallpapersafari.com/29/87/G8Ud4s.jpg" class="card-img-top" alt="..." style="height: 400px;">
+    <div class="card-body">
+      <h5 class="card-title">Turkey</h5>
+      <h6 class="card-title"> A Complete Travel Guide to Kabak, Turkey</h6>
+      <p class="card-text">Turkey - Itinerary, How to Visit, What to Do, And More</p>
+      <a href="#" class="btn btn-dark">Know more</a>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+<!-- footer -->
+
+<!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Join over 3,000 readers and get a free Lightroom preset on us as well as travel news, updates, and great travel stories from around the world.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">POPULAR ITINERARIES</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">3 Months Itinerary in Europe</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">2 Weeks Itinerary for Albania</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">One Month in Turkey</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">One Week for the Baltic Countries</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">TOP DESTINTATIONS</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Albania Travel Guide</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Turkey Travel Guide </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Egypt Travel Guide </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Thailand Travel Guide</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">ABOUT</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">About Me</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Terms</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Plan a Backpacking Trip</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">STAY CONNECTED</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Sign Up For My Newsletter</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Work With Me</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Contact</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Social media websites</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+  <footer class="text-center text-white" style="background-color: #caced1;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Images -->
+      <section class="">
+        <div class="row">
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+            <div
+              class="bg-image hover-overlay ripple shadow-1-strong rounded"
+              data-ripple-color="light"
+            >
+              <img
+                src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+                class="w-100"
+              />
+              <a href="#!">
+                <div
+                  class="mask"
+                  style="background-color: rgba(251, 251, 251, 0.2);"
+                ></div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Images -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">ParadiceOnEarth.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Copyright -->
+  <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2020 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div> -->
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
